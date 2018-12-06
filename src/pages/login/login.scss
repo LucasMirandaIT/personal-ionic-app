@@ -8,41 +8,6 @@ page-login {}
     left: 0;
 }
 
-
-
-// .login {
-//     max-width: 350px;
-//     min-height: 500px;
-//     margin: 4% auto;
-//     background-color: rgba(10, 10, 10, 0.68);
-// }
-
-// .login-form {
-//     padding: 8px 20px 20px;
-//     height: 120px;
-//     width: 100%;
-// }
-
-// .username-row {
-//     position: relative;
-//     height: 40px;
-//     width: 88%;
-//     border-bottom: 1px solid;
-//     margin-bottom: 10px;
-// }
-
-// .password-row {
-//     position: relative;
-//     height: 40px;
-//     width: 88%;
-//     border-bottom: 1px solid;
-// }
-
-// .password-icon,
-// .user-icon {
-//     margin: 5px;
-// }
-
 .password-icon .key-path,
 .user-icon .user-path {
     fill: rgba(10, 10, 10, 0);
@@ -63,15 +28,11 @@ page-login {}
 }
 
 input {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 195px;
-    height: 30px;
+    width: 300px;
     border-radius: 40px;
     padding-left: 20px;
     background: white;
-    color: white; // border: none;
+    color: black; // border: none;
 }
 
 input::-webkit-input-placeholder {
@@ -84,16 +45,14 @@ input::-moz-placeholder {
 
 
 button {
-    &#login-button {
-        display: block;
-        width: 240px;
-        height: 40px;
+    &#login_button {
+        width: 56vw;
+        margin-left: calc(50% - 28vw);
         padding: 0;
-        margin: 10px 20px 10px;
-        margin-left: calc(50% - 120px);
         font-weight: 700;
+        margin-top: 15px;
         color: #F0F0F0;
-        background-color: #22c08a;
+        // background-color: #22c08a;
         border: none;
         border-radius: 20px;
         transition: background-color 0.1s ease-in-out;
@@ -113,24 +72,6 @@ button:active {
     background-color: #1eaa7a;
 }
 
-// p {
-//     display: inline-block;
-//     width: 200px;
-//     margin: 0 40px;
-//     font-size: 0.8rem;
-//     color: rgba(255, 255, 255, 0.4);
-// }
-
-// p a {
-//     color: #F0F0F0;
-// }
-
-// label,
-// p a:hover {
-//     -webkit-cursor: pointer;
-//     cursor: pointer;
-// }
-
 @-webkit-keyframes dash {
     to {
         stroke-dashoffset: 0;
@@ -143,38 +84,37 @@ button:active {
     }
 }
 
+#login_container {
+    width: 80%;
+    margin-left: 10%;
+}
+
 #user_container {
-    // background: #ddd;
-    // width: 70%;
+    position: relative;
+    width: 100%;
 }
 #pass_container {
-    // position: relative;
-    // padding: 0 0 0 20px;
-    // margin-left: 10%;
-    // background: #ddd;
-    // width: 70%;
-    // top: 55px;
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
 }
 
 #input {
     margin: 0;
-    width: 70%;
+    width: 100%;
     height: 12.3vw;
     color: black;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 #input_img {
     position: absolute;
     top: 7px;
-    left: 8px;
+    left: 6px;
     width: 30px;
     height: 36px;
 }
 
-#login_container {
-
-}
-
-.login_button {
+.logo_img {
+    margin-top: 12.5vw;
 }
