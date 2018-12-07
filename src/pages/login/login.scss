@@ -35,6 +35,10 @@ input {
     color: black; // border: none;
 }
 
+input:focus {
+    border: 1px solid blue;
+}
+
 input::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.4);
 }

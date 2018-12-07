@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
+import { NavController } from 'ionic-angular';
+import { FilesListPage } from '../files-list/files-list';
+import { GithubReposPage } from '../github-repos/github-repos';
 
 @Component({
   templateUrl: 'tabs.html'
@@ -10,10 +11,9 @@ import { HomePage } from '../home/home';
 export class TabsPage {
 
   tab1Root = HomePage;
-  tab2Root = AboutPage;
-  tab3Root = ContactPage;
+  tab2Root = FilesListPage;
+  tab3Root = GithubReposPage;
 
-  constructor() {
-
+  constructor(public navCtrl: NavController) {
   }
 }

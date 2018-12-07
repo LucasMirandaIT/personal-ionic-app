@@ -15,6 +15,12 @@ import { AuthProvider } from '../providers/auth/auth';
 import { HttpClientModule } from '@angular/common/http';
 
 import { IonicStorageModule } from '@ionic/storage';
+import { HeaderComponent } from '../components/header/header';
+import { FilesListPage } from '../pages/files-list/files-list';
+import { MenuPage } from '../pages/menu/menu';
+import { FilesListProvider } from '../providers/files-list/files-list';
+import { GithubReposPage } from '../pages/github-repos/github-repos';
+import { GithubProvider } from '../providers/github/github';
 
 @NgModule({
   declarations: [
@@ -23,12 +29,16 @@ import { IonicStorageModule } from '@ionic/storage';
     ContactPage,
     HomePage,
     LoginPage,
-    TabsPage
+    MenuPage,
+    FilesListPage,
+    HeaderComponent,
+    TabsPage,
+    GithubReposPage
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    IonicStorageModule,
+    IonicStorageModule.forRoot(),
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -38,13 +48,19 @@ import { IonicStorageModule } from '@ionic/storage';
     ContactPage,
     HomePage,
     LoginPage,
-    TabsPage
+    MenuPage,
+    FilesListPage,
+    HeaderComponent,
+    TabsPage,
+    GithubReposPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthProvider
+    AuthProvider,
+    FilesListProvider,
+    GithubProvider
   ]
 })
 export class AppModule {}

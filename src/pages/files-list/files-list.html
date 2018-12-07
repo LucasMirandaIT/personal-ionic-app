@@ -1,0 +1,24 @@
+<!--
+  Generated template for the FilesListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <header title="Files List"></header>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-slides pager>
+
+    <ion-slide class="slide" *ngFor="let file of myFiles">
+      <ion-icon name="document"></ion-icon>
+      <h2>{{file.filename}}</h2>
+      <h2>{{file.date | date: 'dd/MM/yyyy - hh:mm'}}</h2>
+      <a (click)="navigateToLink(file.downloadurl)"><h2>Google Drive</h2></a>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>

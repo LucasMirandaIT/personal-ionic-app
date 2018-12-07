@@ -37,8 +37,6 @@ export class LoginPage {
         this.navCtrl.setRoot(this.rootPage);
         console.log('Successfully logged', retorno);
       } else {
-        loading.dismiss();
-
         const alert = this.alertCtrl.create({
           title: 'Erro ao logar!',
           subTitle: 'Verifique os dados digitados e tente mais tarde',

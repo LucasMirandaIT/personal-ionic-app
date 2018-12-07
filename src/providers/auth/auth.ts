@@ -5,6 +5,7 @@ import { BehaviorSubject } from 'rxjs';
 
 
 import { environment } from '../../environments/environments';
+import { Storage } from '@ionic/storage';
 /*
   Generated class for the AuthProvider provider.
 

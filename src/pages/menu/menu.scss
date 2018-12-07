@@ -1,0 +1,46 @@
+page-menu {}
+
+.expandable {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow-y: hidden;
+    height: 100%;
+    background-color: #2699FB;
+    .logo {
+        width: 50vw;
+        margin-left: calc(50% - 25vw);
+        margin-top: 10%;
+    }
+    .content {
+        // margin-top: 150px;
+        p {
+            text-align: center;
+            color: white;
+            font-size: 5vw;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+    }
+    .footer {
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        width: 100%;
+        background-color: #7FC4FD;
+    }
+
+    .user-info {
+        width: 85%;
+    }
+    .logout-button {
+        float: right;
+        width: 15%;
+        color: white;
+        ion-icon {
+            font-size: 8vw;
+            font-weight: bold;
+        }
+    }
+}
